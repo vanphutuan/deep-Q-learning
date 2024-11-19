@@ -12,6 +12,25 @@
 3. Tại trang JSON thực hiện chèn link:
    > *"code-runner.executorMap" > "python": > [python.exe link] "C:/Users/TUAN/AppData/.../python.exe"*
 
+### ❌ Lỗi phiên bản Numpy quá cao
+
+   > *A module that was compiled using NumPy 1.x cannot be run in 
+NumPy 2.1.3 as it may crash. To support both 1.x and 2.x    
+versions of NumPy, modules must be compiled with NumPy 2.0. 
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+   > *If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.*
+
+### 👉 Thiết lập link executer cho Code-Runner:
+
+Sử dụng đoạn code sau để ***remove*** phiên bản python hiện tại và ***cài bản numpy cụ thể***
+
+```bash
+pip uninstall numpy
+pip install numpy==1.26.4
+```
+
 # ⬇️ Installation
 
 ### Cài đặt gym
