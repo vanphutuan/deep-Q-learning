@@ -59,3 +59,10 @@ python -m pip install gym
 ```bash
 python.exe -m pip install --upgrade pip
 ```
+### Cài dặt pytorch
+1. Kiểm tra có Nevia GPU không nếu không chọn bản CPU
+   Truy cập vào trang https://pytorch.org/ để chọn bản thích hơn (LG-Gram --> Stable, Windown, pip, python, cpu)
+2. Với VS-Code dùng luôn CMD của win cài (Lệnh từ bước 1)
+```bash
+pip3 install torch torchvision torchaudio
+``` 
